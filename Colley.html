@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="css\colley.css" />
+</head>
+<body>
+    <div>
+        <label for="numTeams">Number of teams: </label>
+        <input id="numTeams" type="text" value="120" min="2"/> <br />
+        <label for="numGames">Number of games for each team: </label>
+        <input id="numGames" type="text" value="12" min="1"/><br />
+        <button id="runSim">Run Simulation</button>
+    </div>
+    <table style="width:100%" id="rankingsTable" border="1">
+        <tr>
+            <th id="colleyRankHeader">Colley ranking</th>
+            <th id="actualRankHeader">Actual ranking</th>
+            <th id="colleyRatingHeader">Colley rating</th>
+            <th id="winsHeader">Number of wins</th>
+            <th id="lossesHeader">Number of losses</th>
+            <th>Teams beaten<br />(Colley rankings)</th>
+            <th>Teams lost to<br />(Colley rankings)</th>
+            <th id="sosHeader">Average ranking of opponents<br /> (Strength of schedule)</th>
+        </tr>
+    </table>
+    <script src="js\colley.js"></script>
+</body>
+</html>
